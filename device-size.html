@@ -1,7 +1,12 @@
 <html>
   <div id="size-container"></div>
 <script>
+  
+var ratio = window.devicePixelRatio || 1;
+var w = screen.width * ratio;
+var h = screen.height * ratio;
 
- document.getElementById("size-container").innerHTML = "Hegith:"+window.screen.availHeight +" Width:" +window.screen.availWidth
+ document.getElementById("size-container").innerHTML = "Hegith:"+window.screen.availHeight +" Width:" +window.screen.availWidth+"<br/> R-H:"+h+" R-W:"+w;
+  
 </script>
 </html>
